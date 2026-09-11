@@ -18,10 +18,14 @@
       <label class="post__search--label">
         Search by Id
       </label>
-      <input type="text" placeholder="1">
+      <!-- add a spinner with an integer range of 1 to 10-->
+      <input type="number" min="1" max="10" placeholder="1"
+      onchange="onSearchChange(event)"
+      class="post__search--input" />
     </div>
   </div>
   <div class="post-list">
+    <!--
     <div class="post">
       <div class="post__title">
         Post Title
@@ -30,6 +34,8 @@
         Post Body
       </p>
     </div>
+    -->
+
   </div>
 </body>
 <script src="user.js"></script>
